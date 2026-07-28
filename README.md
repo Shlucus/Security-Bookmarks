@@ -9,7 +9,7 @@ One HTML file, every Chromium browser, no extension required.
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
 [![Format](https://img.shields.io/badge/format-Netscape%20Bookmark%20HTML-orange)](https://learn.microsoft.com/en-us/deployedge/edge-favorites-file-format)
 [![Browsers](https://img.shields.io/badge/works%20with-Chrome%20%7C%20Edge%20%7C%20Brave%20%7C%20Arc%20%7C%20Vivaldi-4285F4)](#-import-instructions)
-[![Tools](https://img.shields.io/badge/tools%20indexed-51%2B-success)](#-full-index)
+[![Tools](https://img.shields.io/badge/tools%20indexed-66%2B-success)](#-full-index)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#-contributing)
 
 </div>
@@ -75,7 +75,7 @@ Import it once and every teammate, VM, or fresh browser profile gets the same cu
 
 </details>
 
-Everything lands inside one **`Security Toolkit`** folder, so it won't dump 50 new bookmarks all over your existing bar. You can thank me later.
+Everything lands inside one **`Security Toolkit`** folder, so it won't dump 66 new bookmarks all over your existing bar. You can thank me later.
 
 ---
 
@@ -84,21 +84,29 @@ Everything lands inside one **`Security Toolkit`** folder, so it won't dump 50 n
 ```
 Security Toolkit/
 ├── 🔎 OSINT & Recon/
-│   ├── Search Engines                    → Shodan, Censys, ZoomEye, urlscan.io
-│   ├── People, Identity & Breach Data     → OSINT Industries, FaceCheck, HIBP, DeHashed
-│   └── Threat Intel & Reputation          → Cisco Talos, AbuseIPDB, VirusTotal
+│   ├── 🔭 Search Engines                  → Shodan, Censys, ZoomEye, urlscan.io
+│   ├── 🪪 People, Identity & Breach Data  → OSINT Industries, FaceCheck, HIBP, DeHashed
+│   └── 🚨 Threat Intel & Reputation       → Cisco Talos, AbuseIPDB, VirusTotal
 ├── 🌐 Networking & IP Tools                → ifconfig.co, ipinfo.io, WiGLE, DNSdumpster, MXToolbox
-├── 🧰 Analysis & Utilities                 → CyberChef, Forensically, explainshell, CrackStation, ffuf, webhook.site
-├── 🕸️ Web App Security Testing             → PentesterLab, OWASP Juice Shop, Altoro Mutual, OverTheWire
-├── 🏁 CTF & Practice Labs                  → TryHackMe, pwnable.kr, WeChall, CTF101
-├── 🔌 Hardware & Physical Security         → Flipper Zero, ALFA adapters, Digispark/BadUSB, uConsole
-├── 🤖 AI & Chatbots                        → ChatGPT, Claude, jailbreak megathread
-├── 🕵️ Privacy & Anonymity                  → Tor Project, DuckDuckGo, Proton Mail
-├── 📚 Learning & Community                 → Null Byte, Hackademy, eJPT, 2600
-└── 📄 Reference Manuals                    → Kali command reference, Geoleaks Codebook
+├── 🧰 Analysis & Utilities                 → CyberChef, Forensically, explainshell, CrackStation, webhook.site, Bitwarden, revshells.com, SSL Labs
+├── 🏁 CTF & Practice Labs/
+│   ├── 🧪 Labs                            → TryHackMe, Hack The Box, CyLab/picoCTF, OverTheWire, PentesterLab, WeChall
+│   └── 🎯 Vulnerable Sites                → pwnable.kr, Altoro Mutual, OWASP Juice Shop
+├── 🔌 Hardware & Physical Security/
+│   ├── 💲 Gadget Retailers                → PwnShop, Hak5, JustCallMeKoko, Rabbit-Labs, OpenSourceSDRLab, Lab401, Flipper Zero, HackerGadgets
+│   └── 📦 Resources                       → ALFA driver, Flipper Zero demo, BadUSB/Digispark videos
+├── 🤖 AI & Chatbots/
+│   ├── 💬 Resources                       → jailbreak megathread
+│   └── (loose)                            → ChatGPT, Claude, Gemini, Grok, Copilot
+├── 🕵️ Privacy & Anonymity                 → Tor Project, DuckDuckGo, Proton Mail, Brave, Tails
+├── 📚 Learning & Community/
+│   ├── 🎓 Creators & Educators/
+│   │   └── ▶️ YouTube                     → Null Byte, NetworkChuck, Darknet Diaries
+│   └── (loose)                            → CTF101, 2600, DEF CON
+└── 📄 Reference Manuals                    → Google Dorks List, Geoleaks Codebook, Kali command reference
 ```
 
-Eleven folders, three of them nested one level deeper under OSINT because that category was getting unwieldy. That's it. Nothing five levels deep, because nobody's clicking through five levels deep at 2am during an engagement.
+Nine top-level folders, four of them split further into subfolders. The deepest nesting is three levels, under Learning & Community, because the YouTube channels needed their own shelf. Still nothing you need a map for.
 
 ---
 
@@ -145,46 +153,64 @@ Eleven folders, three of them nested one level deeper under OSINT because that c
 | [Forensically](https://29a.ch/photo-forensics/#pca) | Free photo forensics, error level analysis and the like |
 | [explainshell.com](https://explainshell.com/) | Paste a shell command, get every flag explained |
 | [CrackStation](https://crackstation.net/) | Online hash lookup against huge precomputed tables |
-| [ffuf](https://github.com/ffuf/ffuf) | Fast web fuzzer written in Go, does most of the heavy lifting in a directory brute force |
 | [webhook.site](https://webhook.site/) | Spin up a URL, watch what hits it, useful for SSRF and blind callbacks |
-| [theHarvester](https://hackviser.com/tactics/tools/the-harvester) | Email, subdomain, and name recon in one pass |
-
-</details>
-
-<details>
-<summary><b>🕸️ Web App Security Testing</b></summary>
-
-| Tool | What it's for |
-|---|---|
-| [PentesterLab](https://pentesterlab.com/) | Paid and free web hacking exercises, code review included |
-| [OWASP Juice Shop](https://juice-shop.herokuapp.com/#/) | The intentionally broken app everyone learns on eventually |
-| [Altoro Mutual](https://demo.testfire.net/index.jsp) | IBM's ancient but still-useful SQLi demo bank |
-| [OverTheWire SQLi Lab](https://redtiger.labs.overthewire.org/) | SQL injection practice, no setup |
+| [Bitwarden Password Strength Tester](https://bitwarden.com/password-strength/) | Checks how long a password would survive |
+| [revshells.com](https://www.revshells.com/) | Generates reverse shell one-liners for whatever's on the box |
+| [SSL Labs](https://www.ssllabs.com/ssltest/) | Qualys' SSL/TLS configuration grader |
 
 </details>
 
 <details>
 <summary><b>🏁 CTF & Practice Labs</b></summary>
 
+*Labs*
+
 | Tool | What it's for |
 |---|---|
-| [TryHackMe](https://tryhackme.com/access) | Guided labs, good on-ramp if you're newer to this |
-| [pwnable.kr](https://pwnable.kr/) | Binary exploitation wargame, old-school and still sharp |
+| [TryHackMe](https://tryhackme.com/) | Guided labs, good on-ramp if you're newer to this |
+| [Hack The Box](https://www.hackthebox.com/) | The other big one, less hand-holding |
+| [CyLab Security Academy (picoCTF)](https://cylabacademy.org/) | Quick browser-based labs, no VM required |
+| [OverTheWire](https://overthewire.org/wargames/) | Wargames, old-school and still sharp |
+| [PentesterLab](https://pentesterlab.com/) | Paid and free web hacking exercises, code review included |
 | [WeChall](https://www.wechall.net/active_sites) | A list of active challenge sites so you don't have to hunt for them |
-| [CTF101](https://ctf101.org/) | Fundamentals, start here if CTFs are new to you |
-| [Capture-The-Flag 101](https://www.youtube.com/watch?v=QHPFbrJ_olg&t=428s) | A video walkthrough of the same idea |
+
+*Vulnerable Sites*
+
+| Tool | What it's for |
+|---|---|
+| [pwnable.kr](https://pwnable.kr/) | Binary exploitation wargame |
+| [Altoro Mutual](https://demo.testfire.net/index.jsp) | IBM's ancient but still-useful SQLi demo bank |
+| [OWASP Juice Shop](https://juice-shop.herokuapp.com/#/) | The intentionally broken app everyone learns on eventually |
+
+*Loose*
+
+| Tool | What it's for |
+|---|---|
+| [Capture-The-Flag 101](https://www.youtube.com/watch?v=QHPFbrJ_olg&t=428s) | A video walkthrough of the whole idea |
 
 </details>
 
 <details>
 <summary><b>🔌 Hardware & Physical Security</b></summary>
 
+*Gadget Retailers*
+
 | Tool | What it's for |
 |---|---|
-| [FlipC.org](https://flipc.org/) | Flipper Zero community hub |
+| [PwnShop](https://www.pwnshop.ca/) | Security tools for students, by students |
+| [Hak5](https://shop.hak5.org/) | Pentest hardware and media, the OG |
+| [JustCallMeKoko LLC](https://justcallmekokollc.com/) | ESP32 Marauder, wardriving gear, Flipper adapters |
+| [Rabbit-Labs](https://rabbit-labs.com/) | RF, Wi-Fi, and accessories |
+| [OpenSourceSDRLab](https://www.aliexpress.com/store/4586015) | HackRF One and uConsole resale on AliExpress |
+| [Lab401](https://lab401.com/) | Trusted RFID and pentesting gear, Flipper Zero to Proxmark |
+| [Flipper Zero](https://flipper.net/) | The official site and store |
+| [HackerGadgets](https://hackergadgets.com/) | uConsole and Pi accessories |
+
+*Resources*
+
+| Tool | What it's for |
+|---|---|
 | [ALFA AWUS036ACS Driver](https://store.rokland.com/pages/alfa-awus036acs-kalipi-driver-install-instructions) | Driver install guide for the adapter everyone in Wi-Fi auditing owns |
-| [HackerGadgets uConsole](https://forum.clockworkpi.com/t/hackergadgets-aio-board-package/17875) | AIO board package for the uConsole |
-| [uConsole Assembly Guide (PDF)](https://github.com/clockworkpi/uConsole/blob/master/Clockwork_uConsole_Assembly_Guidelines.pdf) | The build instructions, actually helpful |
 | [Flipper Zero "Rolling Flaws"](https://www.youtube.com/watch?v=gMnGuDC9EQo&ab_channel=DerekJamison) | RF replay attack demo |
 | [BadUSB / Digispark Wi-Fi Password Theft](https://www.youtube.com/watch?v=6Ciq5zmq150) | ATtiny85 payload walkthrough |
 | [$3 Digispark BadUSB Script](https://www.youtube.com/watch?v=X6R8cveFz74&t=441s) | Proof that BadUSB doesn't need a big budget |
@@ -197,7 +223,10 @@ Eleven folders, three of them nested one level deeper under OSINT because that c
 | Tool | What it's for |
 |---|---|
 | [ChatGPT](https://chat.openai.com/) | OpenAI's assistant |
-| [Claude](https://claude.ai/) | Anthropic's assistant, the one writing this README |
+| [Claude](https://claude.ai/) | Anthropic's assistant, the one that keeps getting asked to edit this README |
+| [Google Gemini](https://gemini.google.com/app) | Google's assistant |
+| [Grok](https://grok.com/) | xAI's assistant |
+| [Microsoft Copilot](https://copilot.microsoft.com/) | Microsoft's assistant |
 | [r/GPT_jailbreaks megathread](https://www.reddit.com/r/GPT_jailbreaks/comments/1164aah/chatgpt_developer_mode_100_fully_featured_filter/) | Prompt injection research, kept as a reference, not an endorsement |
 
 </details>
@@ -210,18 +239,29 @@ Eleven folders, three of them nested one level deeper under OSINT because that c
 | [Tor Project](https://www.torproject.org/) | Anonymity network and browser |
 | [DuckDuckGo](https://duckduckgo.com/) | Search that isn't building a profile on you |
 | [Proton Mail](https://proton.me/mail) | Encrypted email |
+| [Brave](https://brave.com/) | Privacy-focused browser |
+| [Tails](https://tails.net/) | Amnesic live OS, boots from USB and forgets everything after |
 
 </details>
 
 <details>
 <summary><b>📚 Learning & Community</b></summary>
 
+*Creators & Educators → YouTube*
+
 | Tool | What it's for |
 |---|---|
 | [Null Byte](https://www.youtube.com/@NullByteWHT/videos) | Long-running hacking tutorial channel |
-| [Hackademy](https://lolkatz.github.io/will-hack-for-coffee/2022/05/28/northsec-hackademy.html) | Write-up from NorthSec's Hackademy |
-| [eJPT Certification](https://security.ine.com/certifications/ejpt-certification/) | INE's junior pentester cert |
+| [NetworkChuck](https://www.youtube.com/@NetworkChuck) | Networking and cybersecurity tutorials |
+| [Darknet Diaries](https://www.youtube.com/@JackRhysider) | True cybercrime stories, hosted by Jack Rhysider |
+
+*Loose*
+
+| Tool | What it's for |
+|---|---|
+| [CTF101](https://ctf101.org/) | Fundamentals, start here if CTFs are new to you |
 | [2600 Magazine Store](https://store.2600.com/) | The Hacker Quarterly, still going after all these years |
+| [DEF CON](https://defcon.org/) | The conference's home page |
 
 </details>
 
@@ -230,8 +270,9 @@ Eleven folders, three of them nested one level deeper under OSINT because that c
 
 | Tool | What it's for |
 |---|---|
-| [All Kali Linux Commands (PDF)](https://github.com/tanc7/hacking-books/blob/master/All%20Kali%20Linux%20Commands.pdf) | Command reference, good for when you blank on syntax |
+| [Google Dorks List](https://www.boxpiper.com/posts/google-dork-list/) | Curated dork reference for search-engine recon |
 | [Geoleaks Codebook (PDF)](https://sukado.dk/onewebmedia/Geoleaks%20Codebook%20-%20KD-30-01-2020.pdf) | Geolocation OSINT codebook |
+| [All Kali Linux Commands (PDF)](https://github.com/tanc7/hacking-books/blob/master/All%20Kali%20Linux%20Commands.pdf) | Command reference, good for when you blank on syntax |
 
 </details>
 
