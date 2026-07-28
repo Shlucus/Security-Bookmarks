@@ -12,6 +12,8 @@ One HTML file, every Chromium browser, no extension required.
 [![Tools](https://img.shields.io/badge/tools%20indexed-66%2B-success)](#-full-index)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#-contributing)
 
+<img width="2495" height="1462" alt="Security-Bookmarks(cleaned)" src="https://github.com/user-attachments/assets/db3559fa-15ba-44a7-bcea-2fc8ece2d18a" />
+
 </div>
 
 ---
