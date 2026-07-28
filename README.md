@@ -8,7 +8,7 @@ One HTML file, every Chromium browser, no extension required.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
 [![Format](https://img.shields.io/badge/format-Netscape%20Bookmark%20HTML-orange)](https://learn.microsoft.com/en-us/deployedge/edge-favorites-file-format)
-[![Browsers](https://img.shields.io/badge/works%20with-Chrome%20%7C%20Edge%20%7C%20Brave%20%7C%20Arc%20%7C%20Vivaldi-4285F4)](#-import-instructions)
+[![Browsers](https://img.shields.io/badge/works%20with-Chrome%20%7C%20Edge%20%7C%20Brave%20%7C%20Opera%20%7C%20Arc%20%7C%20Vivaldi-4285F4)](#-import-instructions)
 [![Tools](https://img.shields.io/badge/tools%20indexed-66%2B-success)](#-full-index)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#-contributing)
 
