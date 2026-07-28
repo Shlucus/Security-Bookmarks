@@ -18,9 +18,10 @@ One HTML file, every Chromium browser, no extension required.
 
 ## 📖 What this is
 
-Every security professional has the same problem: a bookmarks bar that's either empty or a graveyard of half-remembered tabs from three years ago. This repo is my attempt to fix that for good. It's the OSINT engines, forensic utilities, CTF labs, and hardware-hacking references I've actually kept coming back to, sorted into folders that make sense instead of one long scroll.
+`Security-Bookmarks` packages years of accumulated tooling: OSINT search engines, forensic utilities, CTF labs, hardware-hacking references, and more into a single, cleanly organized bookmark file. 
 
-Import it once, and your VM, your new laptop, or the intern's fresh browser profile all get the same toolkit. No more "wait, what was that IP lookup site called again."
+Import it once and every teammate, VM, or fresh browser profile gets the same curated toolkit, nested in logical folders instead of a flat, unsearchable list.
+
 
 <div align="center">
 
@@ -258,7 +259,12 @@ Found a tool that deserves a spot? PRs are welcome. To add one:
 2. Update the tables in this README to match.
 3. Open a PR and say in one line why it belongs here.
 
-I'm picky about two things: it has to be free (or at least free-tier) and usable straight from a browser, and it has to earn its place across offensive, defensive, or research work. If it's a single-purpose tool behind a paywall, it's probably not going in.
+I'm picky about three things: 
+1. **It has to be mostly free** (or at least free-tier). Some exceptions can be made if it utilizes an externally payed service (e.g. API Tokens, Third-Party tool for a popular payed services, etc.)
+
+2. **Usable straight from a browser**. Some exceptions are: Downloadable documents/ressources (e.g. Cheatsheets), and some Installers to REALLY useful tools.
+
+3. **MUST BE LEGAL** (most importantly). Any illegal, inappropriate, or malicious entries will be denied and reported.
 
 ---
 
